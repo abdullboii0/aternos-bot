@@ -5,7 +5,9 @@ function addLog(message) {
   const formatted = `[${time}] ${message}`;
 
   console.log(formatted); // still goes to Render logs
+let djsfiked = "lol"
 
+  console.log("hello guys")
   logs.push(formatted);
 
   if (logs.length > 300) logs.shift();
