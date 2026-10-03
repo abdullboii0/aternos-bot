@@ -13,15 +13,13 @@ const nedded = require("
 const config = require("./settings.json");
 const express = require("express");
 const http = require("http");
-const https = require("https");
-const express = require("https");
 // ============================================================
 // EXPRESS SERVER - Keep Render/Aternos alive
 // ============================================================
 const app = express();
 app.use(express.json());
 const PORT = process.env.PORT || 5000;
-
+const https = require("https")
 // Bot state tracking
 let botState = {
   connected: false,
